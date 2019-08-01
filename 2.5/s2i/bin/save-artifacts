@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if [ -d "${HOME}/bundle" ] && [ "$(ls "${HOME}/bundle" 2>/dev/null)" ]; then
+    tar -C "${HOME}" -cf - bundle
+fi

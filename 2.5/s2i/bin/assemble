@@ -23,6 +23,9 @@ shopt -s dotglob
 echo "---> Installing application source ..."
 mv /tmp/src/* ./
 
+echo "---> Installing the artifacts ..."
+mv /tmp/artifacts/* ./
+
 echo "---> Building your Ruby application from source ..."
 if [ -f Gemfile ]; then
   ADDTL_BUNDLE_ARGS="--retry 2"
